@@ -9,7 +9,6 @@ public class main {
         col.add(8);
         col.add(15);
         col.add(17);
-        System.out.println(col);
         int input = scanner.nextInt();
         for (int i = 0; i <= col.size(); i++) {
             int counter = input - col.get(i);
