@@ -22,11 +22,10 @@ public class main {
                 }
             }
         }
-        if (col1 != null){
+        if (!col1.isEmpty()){
             System.out.println("Result: true");
             System.out.println("Число " + col1 + " повторяется 2 раза");
-        }
-        if (col1 == null) {
+        }else {
             System.out.println("Result: false");
             System.out.println("Дубликатов нет");
         }
