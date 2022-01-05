@@ -3,12 +3,12 @@ import java.util.*;
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        List<Integer> colCount = new ArrayList();
         List<Integer> col = new ArrayList();
-        col.add(2);
         col.add(3);
-        col.add(4);
         col.add(8);
+        col.add(15);
+        col.add(17);
         System.out.println(col);
         int input = scanner.nextInt();
         for (int i = 0; i <= col.size(); i++) {
@@ -16,7 +16,8 @@ public class main {
             //System.out.println(counter);
             if (col.contains(counter)) {
                 if (true){
-                    System.out.print(col.indexOf(counter) + " ");
+                    colCount.add(col.indexOf(counter));
+                    System.out.println("result " + colCount);
                 }
             }
         }
