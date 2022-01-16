@@ -1,11 +1,11 @@
 package com.alexey.collections;
 
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class UniqueTask {
-    public List<Integer> containsDuplicate(List<Integer> input) {
+    public static List<Integer> containsDuplicate(List<Integer> input) {
         List<Integer> valueStore = new ArrayList(); //Хранилище найденных дубликатов
-        Collections.sort(input); //Сортируем полученную коллекцию по возрастсанию
         for (int i = 0; i < input.size() - 1; i++) {
             if (input.get(i) == input.get(i+1)){
                 valueStore.add(i); //если найдено совпадение добавляем его в наше хранилище
