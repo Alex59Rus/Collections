@@ -6,6 +6,6 @@ import java.util.*;
 public class SumDemo {
     public static void main(String[] args) {
         SumTask logic = new SumTask();
-        List<Integer> result = SumTask.checkSum(List.of(2,3,4,5,6), 8);
+        List<Integer> result = SumTask.checkSum(List.of(3,8,15,17), 32);
     }
 }
