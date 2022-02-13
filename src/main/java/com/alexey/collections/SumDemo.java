@@ -14,17 +14,17 @@ public class SumDemo {
 
     private static List<Integer> findSum(List<Integer> list, Integer target) {
         Map<Integer,Integer> check = new HashMap<>();
-        List<Integer> check1 = new ArrayList<>();
+        Map<Integer,Integer> check1 = new HashMap<>();
         for (int i = 0; i < list.size(); i++) {
             check.put(target - list.get(i), list.get(i));
         }
-        for (int i = 0; i < check.size(); i++) {
-            if (check.containsKey(check.get(i)));
-            check1.add(check.get(i));
-            System.out.println("result: " + check);
-            System.out.println("result: " + check1);
+        for (int i = 0; i < list.size(); i++) {
+            check1.put(i, list.get(i));
         }
-        System.out.println(check);
-        return null;
+        for (int i = 0; i < check.size(); i++) {
+            if (check.containsKey(check1.containsValue(i)));
+            check1.put(i,check.get(i));
+
+        }return null;
     }
 }
