@@ -1,22 +1,15 @@
 package com.alexey.collections;
 
-import com.sun.source.tree.Tree;
-
 import java.util.*;
 
+import static com.alexey.collections.UniqueLogic.definitionOfUniqueness;
 import static java.util.List.of;
 
 public class UniqueDemo {
-    public static void main(String[] args) {
-        List<Integer> input = definitionOfUniqueness(List.of(1,2,3,4,5,6,5));
+    public static void main(String[] args) throws Exception {
+        List<Integer> input = definitionOfUniqueness(List.of(1,2,3,4,5,6));
+        definitionOfUniqueness(input);
     }
-    private static ArrayList<Integer> definitionOfUniqueness(List<Integer> valueStore) {
-        Set<Integer> setUniqueness = new TreeSet<>(valueStore);
-        if (valueStore.size() == setUniqueness.size()) {
-            System.out.println("Дубликатов нет");
-        }else {
-            System.out.println("Дубликаты есть");
-        }
-        return null;
-    }
+
+
 }
